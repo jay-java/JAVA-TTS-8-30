@@ -1,0 +1,17 @@
+package DAO;
+
+import java.sql.Connection;
+
+import connection.DBConnection;
+import model.User;
+
+public class UserDAO {
+	public static void insertUser(User u) {
+		try {
+			Connection conn = DBConnection.createConnection();
+			String url = "";
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

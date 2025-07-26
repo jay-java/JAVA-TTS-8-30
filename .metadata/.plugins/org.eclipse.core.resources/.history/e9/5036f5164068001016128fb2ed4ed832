@@ -1,0 +1,15 @@
+package connection;
+
+import java.sql.Connection;
+
+public class DBConnection {
+	public static Connection createConnection() {
+		Connection conn = null;
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return conn;
+	}
+}

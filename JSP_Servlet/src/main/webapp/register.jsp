@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%-- <% scriptlets %> --%>
+	<%
+	String msg = (String) request.getAttribute("msg");
+	if (msg != null) {
+		out.print(msg);
+	}
+	%>
+
 	<form action="UserController" method="post">
 		<table>
 			<tr>

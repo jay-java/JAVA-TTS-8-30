@@ -7,6 +7,26 @@
 <title>Insert title here</title>
 </head>
 <body>
-login
+	<%
+	String msg = (String) request.getAttribute("msg");
+	if (msg != null) {
+		out.print(msg);
+	}
+	%>
+<form action="UserController" method="post">
+		<table>
+			<tr>
+				<td>Email :</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="action" value="login"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
