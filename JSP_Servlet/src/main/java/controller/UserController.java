@@ -43,7 +43,7 @@ public class UserController extends HttpServlet {
 			throws ServletException, IOException {
 		String action = request.getParameter("action");
 		System.out.println(action);
-		if(action.equalsIgnoreCase("register")) {
+		if (action.equalsIgnoreCase("register")) {
 			User u = new User();
 			u.setName(request.getParameter("name"));
 			u.setContact(Long.parseLong(request.getParameter("contact")));
@@ -53,35 +53,31 @@ public class UserController extends HttpServlet {
 			System.out.println(u);
 			String email = request.getParameter("email");
 			boolean flag = UserDAO.checkEmail(email);
-			if(flag == false) {
+			if (flag == false) {
 				UserDAO.insertUser(u);
 				response.sendRedirect("login.jsp");
-			}
-			else {
+			} else {
 				request.setAttribute("msg", "OOPS! email alredy exist...");
 				request.getRequestDispatcher("register.jsp").forward(request, response);
 			}
-			
-		}
-		else if(action.equalsIgnoreCase("login")) {
+
+		} else if (action.equalsIgnoreCase("login")) {
 			User u = new User();
 			u.setEmail(request.getParameter("email"));
 			u.setPassword(request.getParameter("password"));
 			String email = request.getParameter("email");
 			boolean flag = UserDAO.checkEmail(email);
-			if(flag == true) {
+			if (flag == true) {
 				User u1 = UserDAO.userLogin(u);
-				if(u1 != null) {
+				if (u1 != null) {
 					HttpSession session = request.getSession();
 					session.setAttribute("data", u1);
 					request.getRequestDispatcher("home.jsp").forward(request, response);
-				}
-				else {
+				} else {
 					request.setAttribute("msg", "Password is incorrect");
 					request.getRequestDispatcher("login.jsp").forward(request, response);
 				}
-			}
-			else {
+			} else {
 				request.setAttribute("msg", "OOPS! email not exist...");
 				request.getRequestDispatcher("login.jsp").forward(request, response);
 			}

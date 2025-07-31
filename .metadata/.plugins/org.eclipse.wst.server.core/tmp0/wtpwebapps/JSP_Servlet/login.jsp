@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +13,7 @@
 		out.print(msg);
 	}
 	%>
-<form action="UserController" method="post">
+	<form action="UserController" method="post">
 		<table>
 			<tr>
 				<td>Email :</td>
