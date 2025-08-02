@@ -39,18 +39,7 @@ tr:nth-child(even) {
 	<h1>
 		Welcome,
 		<%=u.getName()%></h1>
-	<h1>
-		Welcome,
-		<%=u.getContact()%></h1>
-	<h1>
-		Welcome,
-		<%=u.getAddress()%></h1>
-	<h1>
-		Welcome,
-		<%=u.getEmail()%></h1>
-	<h1>
-		Welcome,
-		<%=u.getPassword()%></h1>
+
 
 	<%
 	List<User> list = UserDAO.getAllUsers();
@@ -77,7 +66,7 @@ tr:nth-child(even) {
 			<td><%=u1.getAddress() %></td>
 			<td><%=u1.getEmail() %></td>
 			<td><%=u1.getPassword() %></td>
-			<td><a href="#">Edit</a></td>
+			<td><a href="UserController?action=edit&id=<%=u1.getId()%>">Edit</a></td>
 			<td>
 				<form action="">
 					<input type="submit" name="action" value="delete">

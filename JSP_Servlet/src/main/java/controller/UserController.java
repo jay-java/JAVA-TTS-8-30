@@ -33,6 +33,15 @@ public class UserController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("request received");
+		String action = request.getParameter("action");
+		System.out.println(action);
+		if (action.equalsIgnoreCase("edit")) {
+			int id = Integer.parseInt(request.getParameter("id"));
+			System.out.println(id);
+			User u = UserDAO.getUserById(id);
+			request.setAttribute("user", u);
+			request.getRequestDispatcher("update.jsp").forward(request, response);
+		}
 	}
 
 	/**
@@ -81,6 +90,19 @@ public class UserController extends HttpServlet {
 				request.setAttribute("msg", "OOPS! email not exist...");
 				request.getRequestDispatcher("login.jsp").forward(request, response);
 			}
+		}
+		
+		else if(action.equalsIgnoreCase("update")) {
+			User u = new User();
+			u.setId(Integer.parseInt(request.getParameter("id")));
+			u.setName(request.getParameter("name"));
+			u.setContact(Long.parseLong(request.getParameter("contact")));
+			u.setAddress(request.getParameter("address"));
+			u.setEmail(request.getParameter("email"));
+			u.setPassword(request.getParameter("password"));
+			System.out.println(u);
+			UserDAO.updateUser(u);
+			response.sendRedirect("home.jsp");
 		}
 	}
 

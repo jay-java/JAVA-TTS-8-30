@@ -1,6 +1,5 @@
 INDEX VERSION 1.134+C:\Users\Admin\JAVA TTS 8-30\.metadata\.plugins\org.eclipse.jdt.core
 3416077662.index
-3074035285.index
 3056766771.index
 479151681.index
 798528005.index
