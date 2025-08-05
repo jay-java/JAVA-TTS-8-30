@@ -27,6 +27,14 @@ tr:nth-child(even) {
 <title>Insert title here</title>
 </head>
 <body>
+
+	<%
+	response.setHeader("Cache-Control", "no-cache");
+	response.setHeader("Cache-Control", "no-store");
+	response.setHeader("Pragma", "no-cache");
+	response.setDateHeader("Expires", 0);
+	%>
+
 	<%
 	User u = null;
 	if (session.getAttribute("data") != null) {
@@ -60,16 +68,17 @@ tr:nth-child(even) {
 		for (User u1 : list) {
 		%>
 		<tr>
-			<td><%=u1.getId() %></td>
-			<td><%=u1.getName() %></td>
-			<td><%=u1.getContact() %></td>
-			<td><%=u1.getAddress() %></td>
-			<td><%=u1.getEmail() %></td>
-			<td><%=u1.getPassword() %></td>
+			<td><%=u1.getId()%></td>
+			<td><%=u1.getName()%></td>
+			<td><%=u1.getContact()%></td>
+			<td><%=u1.getAddress()%></td>
+			<td><%=u1.getEmail()%></td>
+			<td><%=u1.getPassword()%></td>
 			<td><a href="UserController?action=edit&id=<%=u1.getId()%>">Edit</a></td>
 			<td>
-				<form action="">
-					<input type="submit" name="action" value="delete">
+				<form action="UserController" method="post">
+					<input type="hidden" name="id" value="<%=u1.getId()%>"> <input
+						type="submit" name="action" value="delete">
 				</form>
 			</td>
 		</tr>
@@ -78,3 +87,9 @@ tr:nth-child(even) {
 		%>
 
 	</table>
+
+	<h1>
+		<a href="logout.jsp">Logout</a>
+	</h1>
+</body>
+</html>
