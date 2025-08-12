@@ -97,7 +97,7 @@
 								<li><a href="#">Customer</a>
 								<ul class="sub-menu">
 									<li><a href="customer-register.jsp">Register</a></li>
-									<li><a href="custoemr-login.jsp">Login</a></li>
+									<li><a href="customer-login.jsp">Login</a></li>
 								</ul></li>
 
 							<li><a href="admin-login.jsp">Admin</a></li>
