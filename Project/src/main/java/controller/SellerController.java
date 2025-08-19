@@ -79,6 +79,42 @@ public class SellerController extends HttpServlet {
 				request.getRequestDispatcher("seller-login.jsp").forward(request, response);
 			}
 		}
+		
+		else if(action.equalsIgnoreCase("update")) {
+			Seller s = new Seller();
+			s.setId(Integer.parseInt(request.getParameter("id")));
+			s.setName(request.getParameter("name"));
+			s.setContact(Long.parseLong(request.getParameter("contact")));
+			s.setAddress(request.getParameter("address"));
+			s.setEmail(request.getParameter("email"));
+			SellerDao.updateProfile(s);
+			HttpSession session = request.getSession();
+			session.setAttribute("data", s);
+			request.getRequestDispatcher("seller-home.jsp").forward(request, response);
+		}
+		
+		else if(action.equalsIgnoreCase("cp")) {
+			String email = request.getParameter("email");
+			String op = request.getParameter("op");
+			String np = request.getParameter("np");
+			String cnp = request.getParameter("cnp");
+			
+			boolean flag = SellerDao.checkOldPassword(email, op);
+			if(flag == true) {
+				if(np.equals(cnp)) {
+					SellerDao.changePassword(email, np);
+					response.sendRedirect("seller-home.jsp");
+				}
+				else {
+					request.setAttribute("msg", "NP and CNP not mathced");
+					request.getRequestDispatcher("seller-change-pass.jsp").forward(request, response);
+				}
+			}
+			else {
+				request.setAttribute("msg", "Old Password Incorrect");
+				request.getRequestDispatcher("seller-change-pass.jsp").forward(request, response);
+			}
+		}
 	}
 
 }
