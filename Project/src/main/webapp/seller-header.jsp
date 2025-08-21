@@ -106,8 +106,8 @@
 							<li><a href="seller-home.jsp">Home</a></li>
 							<li><a href="#">Product</a>
 								<ul class="sub-menu">
-									<li><a href="seller-register.jsp">Upload Product</a></li>
-									<li><a href="seller-login.jsp">Manage Product</a></li>
+									<li><a href="seller-upload-product.jsp">Upload Product</a></li>
+									<li><a href="seller-manage-product.jsp">Manage Product</a></li>
 								</ul></li>
 
 							<li><a href="#">Welcome, <%=s.getName()%></a>
