@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from preview.colorlib.com/theme/cozastore/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 03:50:25 GMT -->
 <head>
 </head>
 <body class="animsition">
