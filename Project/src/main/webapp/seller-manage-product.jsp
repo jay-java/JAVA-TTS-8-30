@@ -39,17 +39,17 @@
 								<tr class="table_row">
 									<td class="column-1">
 										<div>
-											<img src="pimges/<%=p.getImage()%>" alt="IMG" height="100" width="100%">
+											<img src="pimges/<%=p.getImage()%>" alt="IMG" height="100"
+												width="100%">
 										</div>
 									</td>
 									<td class="column-2"><%=p.getPname()%></td>
 									<td class="column-3"><%=p.getPprice()%></td>
 									<td class="column-4"><%=p.getPcategory()%></td>
 									<td class="column-5"><%=p.getPdesc()%></td>
-									<td class="column-5">
-										<button
-											class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
-											Edit</button>
+									<td class="column-5"><a
+										href="ProductController?action=edit&pid=<%=p.getPid() %>"
+										class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">Edit</a>
 									</td>
 									<td class="column-5">
 										<button
