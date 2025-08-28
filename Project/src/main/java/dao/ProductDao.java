@@ -53,7 +53,7 @@ public class ProductDao {
 		}
 		return list;
 	}
-	
+
 	public static Product getProductByPid(int pid) {
 		Product p = null;
 		try {
@@ -62,7 +62,7 @@ public class ProductDao {
 			PreparedStatement pst = con.prepareStatement(sql);
 			pst.setInt(1, pid);
 			ResultSet rs = pst.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				p = new Product();
 				p.setPid(rs.getInt("pid"));
 				p.setSid(rs.getInt("sid"));
@@ -78,4 +78,35 @@ public class ProductDao {
 		return p;
 	}
 
+	public static void updateProduct(Product p) {
+		try {
+			Connection con = DBConnection.createConnection();
+			String sql = "update product set image=?,pname=?,pprice=?,pcategory=?,pdesc=? where pid=?";
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setString(1, p.getImage());
+			pst.setString(2, p.getPname());
+			pst.setInt(3, p.getPprice());
+			pst.setString(4, p.getPcategory());
+			pst.setString(5, p.getPdesc());
+			pst.setInt(6, p.getPid());
+			pst.executeUpdate();
+			System.out.println("product updated");
+		} catch (Exception e) {
+			e.printStackTrace();
+
+		}
+	}
+
+	public static void deleteProduct(int pid) {
+		try {
+			Connection con = DBConnection.createConnection();
+			String sql = "delete from product where pid=?";
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setInt(1, pid);
+			pst.executeUpdate();
+			System.out.println("product deleted");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
