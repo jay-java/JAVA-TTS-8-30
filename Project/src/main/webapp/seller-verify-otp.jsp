@@ -16,7 +16,7 @@
 					<form action="SellerController" method="post">
 						<h4 class="mtext-105 cl2 txt-center p-b-30">Seller Forgot
 							Password</h4>
-								<%
+						<%
 						String msg = (String) request.getAttribute("msg");
 						%>
 						<%
@@ -31,16 +31,21 @@
 						}
 						%>
 
-
+						<%
+						int otp = (Integer)(request.getAttribute("otp"));
+						String email = (String)request.getAttribute("email");
+						%>
+						<input type="hidden" name="email" value="<%=email%>">
+						<input type="hidden" name="otp1" value="<%=otp%>">
 						<div class="bor8 m-b-20 how-pos4-parent">
 							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30"
-								type="email" name="email" placeholder="Your Email">
+								type="text" name="otp2" placeholder="Enter OTP">
 						</div>
 
 
 						<button
 							class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"
-							name="action" value="getotp">Get OTP</button>
+							name="action" value="verify">Verify</button>
 					</form>
 
 
