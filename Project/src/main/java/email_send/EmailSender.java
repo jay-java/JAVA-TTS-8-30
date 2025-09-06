@@ -42,4 +42,35 @@ public class EmailSender {
         Transport.send(msg);
         System.out.println("done");
     }
+    
+    public static void orderPlaced(String toEmail) throws MessagingException {
+        final String fromEmail = "storecoza6@gmail.com"; // sender email
+        final String password = "ejeiipavcsulecma"; // use App Password if 2FA enabled
+
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com"); 
+        props.put("mail.smtp.port", "587"); 
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.starttls.required", "true");
+        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+        props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+        System.out.println(props);
+
+        Session session = Session.getInstance(props, new Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(fromEmail, password);
+            }
+        });
+        System.out.println("user verified");
+
+        Message msg = new MimeMessage(session);
+        msg.setFrom(new InternetAddress(fromEmail));
+        msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
+        msg.setSubject("Order Details");
+        msg.setText("Your OTP is: ");
+
+        Transport.send(msg);
+        System.out.println("done");
+    }
 }
