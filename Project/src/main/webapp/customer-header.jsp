@@ -1,3 +1,6 @@
+<%@page import="dao.WishlistDao"%>
+<%@page import="model.Wishlist"%>
+<%@page import="java.util.List"%>
 <%@page import="model.Customer"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -129,13 +132,17 @@
 
 						<div
 							class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-							data-notify="2">
+							data-notify="">
 							<i class="zmdi zmdi-shopping-cart"></i>
 						</div>
 
-						<a href="#"
+						<%
+						List<Wishlist> wishList = WishlistDao.fetchWishlistByCid(s.getId());
+						%>
+						<a href="customer-wishlist.jsp"
 							class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
-							data-notify="0"> <i class="zmdi zmdi-favorite-outline"></i>
+							data-notify="<%=wishList.size()%>"> <i
+							class="zmdi zmdi-favorite-outline"></i>
 						</a>
 					</div>
 
