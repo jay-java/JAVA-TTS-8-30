@@ -36,8 +36,18 @@ public class WishlistController extends HttpServlet {
 			Wishlist w =new Wishlist();
 			w.setPid(pid);
 			w.setCid(cid);
-			WishlistDao.addToWishlist(w);
-			response.sendRedirect("product-detail.jsp?id="+pid);
+			boolean flag = WishlistDao.checkProductIntoWishlit(pid, cid);
+			System.out.println(flag);
+			if(flag == false) {
+				WishlistDao.addToWishlist(w);
+				response.sendRedirect("product-detail.jsp?id="+pid);
+			}
+			else {
+				request.setAttribute("msg", "product already added");
+				request.setAttribute("id",pid);
+				request.getRequestDispatcher("product-detail.jsp").forward(request, response);
+			}
+			
 		}
 		
 		else if(action.equalsIgnoreCase("remove")) {
