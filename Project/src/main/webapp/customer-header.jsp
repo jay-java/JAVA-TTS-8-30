@@ -1,3 +1,5 @@
+<%@page import="dao.CartDao"%>
+<%@page import="model.Cart"%>
 <%@page import="dao.WishlistDao"%>
 <%@page import="model.Wishlist"%>
 <%@page import="java.util.List"%>
@@ -130,11 +132,14 @@
 							<i class="zmdi zmdi-search"></i>
 						</div>
 
-						<div
-							class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-							data-notify="">
-							<i class="zmdi zmdi-shopping-cart"></i>
-						</div>
+						<%
+						List<Cart> cartList = CartDao.getCartByCustId(s.getId());
+						%>
+						<a href="cart.jsp"
+							class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+							data-notify="<%=cartList.size()%>"> <i
+							class="zmdi zmdi-shopping-cart"></i>
+						</a>
 
 						<%
 						List<Wishlist> wishList = WishlistDao.fetchWishlistByCid(s.getId());

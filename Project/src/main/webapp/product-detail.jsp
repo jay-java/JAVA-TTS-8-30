@@ -79,7 +79,7 @@
 
 								<div class="size-204 flex-w flex-m respon6-next">
 
-									<a href="#"
+									<a href="CartController?action=add&cid=<%=s.getId() %>&pid=<%=p.getPid() %>"
 										class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
 										Add to cart</a>
 								</div>
