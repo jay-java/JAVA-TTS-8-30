@@ -31,8 +31,10 @@
 								<%
 								List<Cart> list = CartDao.getCartByCustId(s.getId());
 								%>
+								<% int subtotal = 0; %>
 								<%
 								for (Cart w : list) {
+									subtotal = subtotal+w.getTotal_price();
 								%>
 								<%
 								Product p = ProductDao.getProductByPid(w.getPid());
@@ -47,8 +49,9 @@
 									<td class="column-2"><%=p.getPname()%></td>
 									<td class="column-3"><%=p.getPprice()%></td>
 									<td class="column-4">
-										<form>
-											<input type="number" name="qty" value="<%=w.getQty()%>">
+										<form action="CartController" method="post">
+											<input type = "hidden" name="cart_id" value="<%=w.getCart_id()%>">
+											<input type="number" name="qty" value="<%=w.getQty()%>" onchange="this.form.submit();">
 										</form>
 									</td>
 									<td class="column-5"><%=w.getTotal_price()%></td>
@@ -62,6 +65,7 @@
 								}
 								%>
 							</table>
+							<h1>Subtotal : <%=subtotal %></h1>
 						</div>
 
 					</div>

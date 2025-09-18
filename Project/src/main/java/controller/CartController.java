@@ -18,21 +18,23 @@ import model.Product;
 @WebServlet("/CartController")
 public class CartController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CartController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public CartController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String action = request.getParameter("action");
-		if(action.equalsIgnoreCase("add")) {
+		if (action.equalsIgnoreCase("add")) {
 			int cid = Integer.parseInt(request.getParameter("cid"));
 			int pid = Integer.parseInt(request.getParameter("pid"));
 			Product p = ProductDao.getProductByPid(pid);
@@ -48,16 +50,24 @@ public class CartController extends HttpServlet {
 			c.setPdesc(p.getPdesc());
 			c.setPayment_status("pending");
 			CartDao.addToCart(c);
-			response.sendRedirect("product-detail.jsp?id="+pid);
+			response.sendRedirect("product-detail.jsp?id=" + pid);
 		}
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		int cart_id = Integer.parseInt(request.getParameter("cart_id"));
+		int qty = Integer.parseInt(request.getParameter("qty"));
+		Cart c = CartDao.getCartByCartId(cart_id);
+		c.setCart_id(cart_id);
+		c.setQty(qty);
+		c.setTotal_price(qty * c.getPprice());
+		CartDao.updateCart(c);
+		response.sendRedirect("cart.jsp");
 	}
 
 }

@@ -31,15 +31,16 @@ public class CartDao {
 			e.printStackTrace();
 		}
 	}
-	public static List<Cart> getCartByCustId(int cid){
+
+	public static List<Cart> getCartByCustId(int cid) {
 		List<Cart> list = new ArrayList<Cart>();
 		try {
 			Connection conn = DBConnection.createConnection();
 			String sql = "select * from cart where cus_id=?";
 			PreparedStatement pst = conn.prepareStatement(sql);
 			pst.setInt(1, cid);
-			ResultSet rs =pst.executeQuery();
-			while(rs.next()) {
+			ResultSet rs = pst.executeQuery();
+			while (rs.next()) {
 				Cart c = new Cart();
 				c.setCart_id(rs.getInt("cart_id"));
 				c.setPid(rs.getInt("pid"));
@@ -58,5 +59,48 @@ public class CartDao {
 			e.printStackTrace();
 		}
 		return list;
+	}
+
+	public static Cart getCartByCartId(int cart_id) {
+		Cart c = null;
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql = "select * from cart where cart_id=?";
+			PreparedStatement pst = conn.prepareStatement(sql);
+			pst.setInt(1, cart_id);
+			ResultSet rs = pst.executeQuery();
+			if (rs.next()) {
+				c = new Cart();
+				c.setCart_id(rs.getInt("cart_id"));
+				c.setPid(rs.getInt("pid"));
+				c.setCus_id(rs.getInt("cus_id"));
+				c.setPprice(rs.getInt("pprice"));
+				c.setQty(rs.getInt("qty"));
+				c.setTotal_price(rs.getInt("total_price"));
+				c.setImage(rs.getString("image"));
+				c.setPname(rs.getString("pname"));
+				c.setPcategory(rs.getString("pcategory"));
+				c.setPdesc(rs.getString("pdesc"));
+				c.setPayment_status(rs.getString("payment_status"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return c;
+	}
+	
+	public static void updateCart(Cart c) {
+		try {
+			Connection conn = DBConnection.createConnection();
+			String sql ="update cart set qty=?,total_price=?  where cart_id=?";
+			PreparedStatement pst  = conn.prepareStatement(sql);
+			pst.setInt(1, c.getQty());
+			pst.setInt(2,c.getTotal_price());
+			pst.setInt(3,c.getCart_id());
+			pst.executeUpdate();
+			System.out.println("cart updated");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
