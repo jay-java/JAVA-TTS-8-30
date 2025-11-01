@@ -529,3 +529,261 @@
 2025-10-16 09:12:10,452 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\test\resources
 2025-10-16 09:12:27,142 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\main\resources
 2025-10-16 09:12:27,143 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\test\resources
+2025-10-16 09:13:08,253 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\main\resources
+2025-10-16 09:13:08,254 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\test\resources
+2025-10-16 09:13:22,089 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\main\resources
+2025-10-16 09:13:22,091 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\test\resources
+2025-10-16 09:13:31,368 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\main\resources
+2025-10-16 09:13:31,368 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HibernateCore\src\test\resources
+2025-11-01 08:33:36,353 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-11-01 08:34:09,353 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references non-existing project HibernateCore.
+org.eclipse.core.runtime.CoreException: Launch configuration App references non-existing project HibernateCore.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1867)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1744)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:409)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-11-01 08:34:09,360 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references non-existing project HibernateCore.
+org.eclipse.core.runtime.CoreException: Launch configuration App references non-existing project HibernateCore.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1867)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1744)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:527)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:415)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:410)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-11-01 08:34:09,363 [Worker-17: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references non-existing project HibernateCore.
+org.eclipse.core.runtime.CoreException: Launch configuration App references non-existing project HibernateCore.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1867)
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1744)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:64)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:50)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:220)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:204)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2010)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:411)
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:435)
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:135)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:892)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1042)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:162)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-11-01 08:37:02,659 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313 [642])
+2025-11-01 08:37:02,662 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313
+2025-11-01 08:37:02,663 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\aopalliance-1.0.jar
+2025-11-01 08:37:02,663 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\guice-5.1.0.jar
+2025-11-01 08:37:02,663 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\httpclient-4.5.14.jar
+2025-11-01 08:37:02,664 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\httpcore-4.4.16.jar
+2025-11-01 08:37:02,664 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\jansi-2.4.1.jar
+2025-11-01 08:37:02,664 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\jcl-over-slf4j-1.7.36.jar
+2025-11-01 08:37:02,664 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-artifact-3.9.7.jar
+2025-11-01 08:37:02,664 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-builder-support-3.9.7.jar
+2025-11-01 08:37:02,665 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-compat-3.9.7.jar
+2025-11-01 08:37:02,665 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-core-3.9.7.jar
+2025-11-01 08:37:02,665 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-embedder-3.9.7.jar
+2025-11-01 08:37:02,666 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-model-3.9.7.jar
+2025-11-01 08:37:02,666 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-model-builder-3.9.7.jar
+2025-11-01 08:37:02,666 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-plugin-api-3.9.7.jar
+2025-11-01 08:37:02,666 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-repository-metadata-3.9.7.jar
+2025-11-01 08:37:02,666 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-api-1.9.20.jar
+2025-11-01 08:37:02,667 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-connector-basic-1.9.20.jar
+2025-11-01 08:37:02,667 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-impl-1.9.20.jar
+2025-11-01 08:37:02,667 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-named-locks-1.9.20.jar
+2025-11-01 08:37:02,667 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-provider-3.9.7.jar
+2025-11-01 08:37:02,667 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-spi-1.9.20.jar
+2025-11-01 08:37:02,668 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-file-1.9.20.jar
+2025-11-01 08:37:02,668 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-http-1.9.20.jar
+2025-11-01 08:37:02,668 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-transport-wagon-1.9.20.jar
+2025-11-01 08:37:02,668 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-resolver-util-1.9.20.jar
+2025-11-01 08:37:02,668 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-settings-3.9.7.jar
+2025-11-01 08:37:02,669 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-settings-builder-3.9.7.jar
+2025-11-01 08:37:02,669 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\maven-shared-utils-3.4.2.jar
+2025-11-01 08:37:02,669 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-11-01 08:37:02,669 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-11-01 08:37:02,669 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-build-api-0.0.7.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-build-api-1.2.0.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-cipher-2.0.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-classworlds-2.8.0.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-component-annotations-2.1.0.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-interpolation-1.27.jar
+2025-11-01 08:37:02,670 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-sec-dispatcher-2.0.jar
+2025-11-01 08:37:02,671 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\plexus-utils-3.5.1.jar
+2025-11-01 08:37:02,671 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-file-3.5.3.jar
+2025-11-01 08:37:02,671 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-http-3.5.3.jar
+2025-11-01 08:37:02,671 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-http-shared-3.5.3.jar
+2025-11-01 08:37:02,672 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.700.20240602-2313\jars\wagon-provider-api-3.5.3.jar
+2025-11-01 08:37:02,674 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.4.8.jre [1147])
+2025-11-01 08:37:02,675 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\com.google.guava_33.4.8.jre.jar
+2025-11-01 08:37:02,675 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.17 [1007])
+2025-11-01 08:37:02,675 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\slf4j.api_2.0.17.jar
+2025-11-01 08:37:02,675 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20091030 [1223])
+2025-11-01 08:37:02,676 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\javax.inject_1.0.0.v20091030.jar
+2025-11-01 08:37:02,676 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [44])
+2025-11-01 08:37:02,676 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-11-01 08:37:02,676 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [1161])
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.apache.commons.cli_1.9.0.jar
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [81])
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.17.0 [1064])
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\org.apache.commons.lang3_3.17.0.jar
+2025-11-01 08:37:02,677 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.3 [1148])
+2025-11-01 08:37:02,678 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Admin\.p2\pool\plugins\com.google.guava.failureaccess_1.0.3.jar
+2025-11-01 08:37:02,682 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\Admin\AppData\Local\Temp\m2e-archetypeGenerator1264051947673523220":
+2025-11-01 08:37:02,687 [Worker-2: Launching mavenrun-3d80627d-99fd-4e94-9001-12be9865e1df] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.1 -DgroupId=com.hibernate -DartifactId=HIbernate_Core -Dversion=0.0.1-SNAPSHOT -Dpackage=com.hibernate -DoutputDirectory="C:\Users\Admin\JAVA TTS 8-30" -Dstyle.color=always -U archetype:generate
+2025-11-01 08:37:20,605 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml
+2025-11-01 08:37:21,370 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:37:22,110 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HIbernate_Core/src/main/java
+2025-11-01 08:37:22,111 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HIbernate_Core/src/main/resources
+2025-11-01 08:37:22,145 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /HIbernate_Core/src/test/java
+2025-11-01 08:37:22,146 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /HIbernate_Core/src/test/resources
+2025-11-01 08:37:22,277 [Worker-10: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-11-01 08:37:23,037 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:37:23,040 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:39:08,736 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:39:08,856 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:39:08,859 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:39:47,248 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:39:47,564 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:39:47,568 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:39:49,316 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:39:49,830 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:39:49,834 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:40:17,051 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:40:17,166 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-11-01 08:40:17,317 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:40:17,320 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:40:17,867 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:40:17,870 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:41:06,238 [main] INFO  org.hibernate.cfg.Environment - Hibernate 3.5.6-Final
+2025-11-01 08:41:06,248 [main] INFO  org.hibernate.cfg.Environment - hibernate.properties not found
+2025-11-01 08:41:06,252 [main] INFO  org.hibernate.cfg.Environment - Bytecode provider name : javassist
+2025-11-01 08:41:06,257 [main] INFO  org.hibernate.cfg.Environment - using JDK 1.4 java.sql.Timestamp handling
+2025-11-01 08:41:44,381 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:41:44,384 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:42:23,217 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:42:23,219 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:42:24,252 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:42:24,254 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:42:31,735 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:42:31,736 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:42:40,088 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:42:40,091 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:43:27,835 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:43:27,837 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:43:35,786 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:43:35,787 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:43:44,095 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:43:44,097 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:44:11,928 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:44:11,931 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:44:18,505 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:44:18,507 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:46:53,699 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:46:53,701 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:47:16,415 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:47:16,417 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:47:18,527 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:47:18,529 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:47:28,214 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:47:28,216 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:47:54,369 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:47:54,371 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:48:11,992 [Worker-31: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.hibernate:HIbernate_Core:0.0.1-SNAPSHOT @ C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\pom.xml.
+2025-11-01 08:48:12,076 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+2025-11-01 08:48:12,264 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:48:12,268 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:48:12,733 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:48:12,735 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:48:52,910 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:48:52,911 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:49:03,384 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:49:03,386 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:49:14,926 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:49:14,928 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:49:38,131 [Worker-31: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:49:38,133 [Worker-31: Building Workspace] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:49:42,695 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:49:42,696 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:49:43,750 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:49:43,751 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:50:21,463 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:50:21,465 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:50:35,263 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:50:35,264 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:50:41,516 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:50:41,518 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:50:43,553 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:50:43,555 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:51:10,074 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:51:10,076 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:51:13,781 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:51:13,783 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:51:18,385 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:51:18,387 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:51:28,759 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:51:28,761 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:53:37,148 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:53:37,150 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:53:54,620 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:53:54,621 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:53:55,714 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:53:55,716 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:54:05,039 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:54:05,040 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:54:33,607 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:54:33,609 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:54:54,254 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:54:54,256 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:56:05,316 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:56:05,318 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:56:11,779 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:56:11,780 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:56:32,466 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:56:32,467 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:57:06,092 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:57:06,093 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:57:13,325 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:57:13,326 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:57:29,284 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:57:29,286 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:57:31,412 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:57:31,413 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
+2025-11-01 08:57:58,590 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\main\resources
+2025-11-01 08:57:58,591 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JAVA TTS 8-30\HIbernate_Core\src\test\resources
