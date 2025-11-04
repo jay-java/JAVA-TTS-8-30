@@ -8,8 +8,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user_data")
 public class User {
-	@Id
-	@Column(name = "user_id")
+	@Id//primary key
+	@Column(name = "user_id") //to change column name
 	private int id;
 	@Column(name = "user_name")
 	private String name;

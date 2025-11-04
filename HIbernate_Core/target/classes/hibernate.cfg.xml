@@ -11,5 +11,7 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<property name="hibernate.show_sql">true</property>
 		<mapping class="com.hibernate.User"/>
+		<mapping class="OneToOne.Student"/>
+		<mapping class="OneToOne.Course"/>
 	</session-factory>
 </hibernate-configuration>
