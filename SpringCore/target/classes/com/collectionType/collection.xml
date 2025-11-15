@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean class="com.collectionType.User" name="u1">
+		<property name="id" value="1" />
+		<property name="name" value="java" />
+		<property name="contactNames">
+			<list>
+				<value>abc</value>
+				<value>def</value>
+				<value>xyz</value>
+				<value>abc</value>
+			</list>
+		</property>
+		<property name="contact">
+			<set>
+				<value>987654321</value>
+				<value>789564232</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="1" value="java" />
+				<entry key="2" value="python" />
+				<entry key="3" value="php" />
+			</map>
+		</property>
+	</bean>
+
+
+
+</beans>
