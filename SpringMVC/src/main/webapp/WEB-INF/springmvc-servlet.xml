@@ -9,13 +9,26 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com"/>
-	
+	<context:component-scan base-package="com" />
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		name="viewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean class="org.springframework.orm.hibernate5.HibernateTemplate"
+		name="hibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+		name="sessionFactory">
+		<property name="dataSource"/>
+		<property name="hibernateProperties"></property>
+		<property name="annotatedClasses"></property>
 	</bean>
 
 </beans>
