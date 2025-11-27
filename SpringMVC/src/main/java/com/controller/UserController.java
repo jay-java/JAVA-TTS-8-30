@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,10 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.dao.UserDao;
 import com.model.User;
 
 @Controller
 public class UserController {
+
+	@Autowired
+	private UserDao dao;
 
 //	@RequestMapping("/")
 //	public String indexPage(HttpServletRequest request) {
@@ -46,7 +51,8 @@ public class UserController {
 	}
 
 	@RequestMapping("/")
-	public String homePage() {
+	public String homePage(Model m) {
+		m.addAttribute("list", this.dao.getAllUsers());
 		return "home";
 	}
 
@@ -81,8 +87,9 @@ public class UserController {
 //	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
-	public String addUser(@ModelAttribute User u) {
-		System.out.println(u);
+	public String addUser(@ModelAttribute User u, Model m) {
+		this.dao.insertOrUpdateUser(u);
+		m.addAttribute("list", this.dao.getAllUsers());
 		return "home";
 	}
 

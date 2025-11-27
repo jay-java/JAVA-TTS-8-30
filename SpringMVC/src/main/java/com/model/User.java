@@ -1,11 +1,28 @@
 package com.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String name;
 	private long contact;
+	private String address;
 	private String email;
 	private String password;
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public int getId() {
 		return id;
@@ -49,8 +66,8 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", contact=" + contact + ", email=" + email + ", password="
-				+ password + "]";
+		return "User [id=" + id + ", name=" + name + ", contact=" + contact + ", address=" + address + ", email="
+				+ email + ", password=" + password + "]";
 	}
 
 }
