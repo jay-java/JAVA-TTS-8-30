@@ -28,7 +28,7 @@ tr:nth-child(even) {
 <body>
 	home
 	<h1>
-		<a href="register">Register here...</a>
+		<a href="${pageContext.request.contextPath }/register">Register here...</a>
 	</h1>
 	<table>
 		<tr>
@@ -49,8 +49,8 @@ tr:nth-child(even) {
 				<td>${u.address }</td>
 				<td>${u.email }</td>
 				<td>${u.password }</td>
-				<td><a href="">Edit</a></td>
-				<td><a href="">Delete</a></td>
+				<td><a href="edit/${u.id }">Edit</a></td>
+				<td><a href="delete/${u.id }">Delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>

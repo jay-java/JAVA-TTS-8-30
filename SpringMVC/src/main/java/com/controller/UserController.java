@@ -9,9 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.dao.UserDao;
 import com.model.User;
@@ -93,4 +95,19 @@ public class UserController {
 		return "home";
 	}
 
+	@RequestMapping("/edit/{id}")
+	public ModelAndView editUser(@PathVariable("id") int id) {
+		User u = this.dao.fetchUserById(id);
+		ModelAndView m = new ModelAndView();
+		m.addObject("u", u);
+		m.setViewName("update");
+		return m;
+	}
+
+	@RequestMapping("/delete/{id}")
+	public String deleteUser(@PathVariable("id") int id, Model m) {
+		this.dao.deleteUser(id);
+		m.addAttribute("list", this.dao.getAllUsers());
+		return "home";
+	}
 }
