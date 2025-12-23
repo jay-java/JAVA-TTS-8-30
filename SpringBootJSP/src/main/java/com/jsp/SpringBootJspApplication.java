@@ -1,13 +1,13 @@
-package com.rest;
+package com.jsp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootResttApplication {
+public class SpringBootJspApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootResttApplication.class, args);
+		SpringApplication.run(SpringBootJspApplication.class, args);
 	}
 
 }
