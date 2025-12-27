@@ -6,6 +6,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>hello
+<body>hello user
 </body>
 </html>

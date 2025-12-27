@@ -15,9 +15,6 @@ import lombok.ToString;
 
 @Entity
 @Data
-@ToString
-@Getter
-@Setter
 public class User {
 
 	@Id

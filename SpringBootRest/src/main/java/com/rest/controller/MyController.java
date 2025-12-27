@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,7 +30,7 @@ public class MyController {
 
 	@GetMapping("/")
 	public String msg() {
-		return "msg";
+		return "application is running";
 	}
 
 //	@GetMapping("/user")
@@ -45,6 +46,13 @@ public class MyController {
 		return this.service.fetchAllUser();
 	}
 
+	@GetMapping("/pageusers")
+	public List<User> getAlllUsers(
+			@RequestParam(value = "pageNumber", defaultValue = "0", required = false) Integer pageNumber,
+			@RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer pageSize) {
+		return this.service.fetchAlllUser(pageNumber, pageSize);
+	}
+
 	@PostMapping("/user")
 	public User addNewUser(@RequestBody User u) {
 		return this.service.addUser(u);
@@ -56,7 +64,7 @@ public class MyController {
 	}
 
 	@GetMapping("/user")
-	public Optional<User> getUserByN(@RequestParam("name") String name) {
+	public List<User> getUserByN(@RequestParam("name") String name) {
 		System.out.println(name);
 		return this.service.getUserByName(name);
 	}
@@ -69,6 +77,11 @@ public class MyController {
 	@PutMapping("/user")
 	public User updateUser(@RequestBody User u) {
 		return this.service.updateUser(u);
+	}
+
+	@DeleteMapping("/user/{id}")
+	public void deleteUser(@PathVariable("id") long id) {
+		this.service.deleteUser(id);
 	}
 
 }
