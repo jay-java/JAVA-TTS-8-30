@@ -8,22 +8,15 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import com.rest.controller.MyController;
 import com.rest.model.User;
 import com.rest.repository.UserRepository;
 
 @Component
 public class UserService {
 
-    private final MyController myController;
 
 	@Autowired
 	private UserRepository repo;
-
-    UserService(MyController myController) {
-        this.myController = myController;
-    }
 
 	public List<User> fetchAllUser() {
 		return this.repo.findAll();
