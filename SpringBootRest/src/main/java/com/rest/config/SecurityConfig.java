@@ -12,11 +12,11 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
 public class SecurityConfig {
 
-	@Bean
+//	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
 		return http.csrf(customizer -> customizer.disable())
@@ -26,7 +26,7 @@ public class SecurityConfig {
 				.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).build();
 	}
 
-	@Bean
+//	@Bean
 	public UserDetailsService userDetailsService() {
 
 		UserDetails user1 = User.withDefaultPasswordEncoder().username("abc").password("abc@123").roles("USER").build();
